@@ -1,0 +1,31 @@
+rules:
+  - rule_id: RULE-001
+    version: "1.0"
+    camera_id: CAM-001
+    rule_type: helmet_required
+    event_type: HELMET_MISSING
+    severity: high
+    enabled: true
+    minimum_unobserved: 2
+    observation_window_seconds: 3.5
+    cooldown_seconds: 300
+
+  - rule_id: RULE-002
+    version: "1.0"
+    camera_id: CAM-002
+    rule_type: loading_area_entry
+    event_type: LOADING_AREA_ENTRY
+    severity: high
+    zone_id: loading_area
+    enabled: true
+    cooldown_seconds: 300
+
+  - rule_id: RULE-003
+    version: "1.0"
+    camera_id: CAM-003
+    rule_type: restricted_area_entry
+    event_type: RESTRICTED_AREA_ENTRY
+    severity: critical
+    zone_id: restricted_area
+    enabled: true
+    cooldown_seconds: 300

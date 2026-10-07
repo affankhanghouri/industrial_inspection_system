@@ -1,0 +1,14 @@
+detector:
+  backend: onnxruntime
+  model: models/yolo26n_512.onnx
+  device: cpu
+  confidence: 0.30
+  image_size: 512
+  classes:
+    - person
+  cpu_threads: 2
+  opencv_threads: 1
+
+runtime:
+  scheduling: round_robin
+  idle_wait_ms: 10

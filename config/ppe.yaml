@@ -1,0 +1,27 @@
+detector:
+  backend: openvino
+  model: models/yolov8n_ppe_construction_512_openvino_model
+  device: cpu
+  confidence: 0.25
+  image_size: 512
+  enabled_types:
+    - helmet
+  helmet_class_names:
+    - hardhat
+  cpu_threads: 2
+  opencv_threads: 1
+
+association:
+  head_region_fraction: 0.30
+  horizontal_expansion: 0.20
+  vertical_expansion: 0.05
+  minimum_helmet_overlap: 0.50
+  maximum_center_distance: 0.75
+  minimum_score: 0.55
+  ambiguity_margin: 0.10
+
+runtime:
+  enabled_cameras:
+    - CAM-001
+  minimum_interval_seconds: 1.0
+  idle_wait_ms: 5

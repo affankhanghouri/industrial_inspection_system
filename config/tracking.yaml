@@ -1,0 +1,12 @@
+tracker:
+  backend: time_aware_iou
+  minimum_detection_confidence: 0.40
+  minimum_iou: 0.05
+  maximum_center_distance: 1.50
+  maximum_lost_seconds: 1.75
+  minimum_confirmed_hits: 2
+  maximum_prediction_seconds: 1.00
+  velocity_smoothing: 0.60
+
+runtime:
+  idle_wait_ms: 5

@@ -1,0 +1,39 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local editor, operating-system, and assistant metadata
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.agents/
+.codex/
+.aws/
+
+# Logs and local session files
+*.log
+*.ses
+
+# Runtime state and generated evidence
+data/*
+!data/.gitkeep
+debug/
+/FINAL_SYSTEM_REPORT.md
+# Local CCTV/video inputs
+videos/*
+!videos/.gitkeep
+
+# Model weights and generated inference exports
+models/*.pt
+models/*.onnx
+models/*_openvino_model/

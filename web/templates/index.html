@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Industrial AI Safety Compliance</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <h1>Industrial AI Safety Compliance</h1>
+      <p>Real-Time Safety Monitoring</p>
+    </div>
+    <span id="connection" class="system-status"><i></i> Connecting</span>
+  </header>
+  <main>
+    <section aria-labelledby="camera-heading" class="camera-status-section">
+      <h2 id="camera-heading" class="visually-hidden">Camera status</h2>
+      <div id="cameras" class="camera-status-list"></div>
+    </section>
+    <section id="cards" class="summary-grid" aria-label="Violation summary"></section>
+    <section class="events-panel" aria-labelledby="events-heading">
+      <div class="events-heading">
+        <div><h2 id="events-heading">Recent Safety Violations</h2><p>Confirmed events from monitored work areas</p></div>
+        <div class="filters" aria-label="Event filters">
+          <div id="status-filters" class="filter-tabs">
+            <button class="active" data-status="ALL">All</button>
+            <button data-status="OPEN">Open</button>
+            <button data-status="RESOLVED">Resolved</button>
+            <button data-status="DISMISSED">Dismissed</button>
+          </div>
+          <label><span class="visually-hidden">Filter by camera</span><select id="camera-filter"><option value="ALL">All cameras</option></select></label>
+        </div>
+      </div>
+      <div id="events" class="event-list"></div>
+    </section>
+  </main>
+  <dialog id="detail" aria-labelledby="detail-title">
+    <div class="dialog-header">
+      <div><span class="eyebrow">Safety Violation</span><h2 id="detail-title">Event details</h2></div>
+      <button class="close" aria-label="Close event details">×</button>
+    </div>
+    <div id="detail-content"></div>
+  </dialog>
+  <script src="/static/app.js"></script>
+</body>
+</html>

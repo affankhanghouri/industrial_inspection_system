@@ -1,0 +1,21 @@
+cameras:
+  - camera_id: CAM-001
+    name: Refinery Area Camera
+    zone_id: refinery_area
+    source_type: mp4
+    source_path: videos/camera_01_helmet_violation.mp4
+    enabled: true
+
+  - camera_id: CAM-002
+    name: Loading Area Camera
+    zone_id: loading_area
+    source_type: mp4
+    source_path: videos/camera_02_loading_area.mp4
+    enabled: true
+
+  - camera_id: CAM-003
+    name: Restricted Access Camera
+    zone_id: restricted_area
+    source_type: mp4
+    source_path: videos/camera_03_restricted_area.mp4
+    enabled: true

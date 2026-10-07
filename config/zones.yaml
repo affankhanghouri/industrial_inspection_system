@@ -1,0 +1,26 @@
+zones:
+  - zone_id: loading_area
+    camera_id: CAM-002
+    name: Loading Area Entry
+    zone_type: loading_area
+    enabled: true
+    enter_confirmations: 2
+    exit_confirmations: 2
+    polygon:
+      - [610, 500]
+      - [1090, 430]
+      - [1160, 660]
+      - [620, 720]
+
+  - zone_id: restricted_area
+    camera_id: CAM-003
+    name: Restricted Doorway
+    zone_type: restricted_area
+    enabled: true
+    enter_confirmations: 2
+    exit_confirmations: 2
+    polygon:
+      - [800, 165]
+      - [1060, 165]
+      - [1060, 625]
+      - [805, 625]
